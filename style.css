@@ -1,0 +1,54 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.clock{
+  transform: rotate(-90deg);
+  position: relative;
+  width: 400px;
+  height: 400px;
+  background-color: lightblue;
+  border-radius: 500px;
+  border: 2px dotted blue;
+}
+.mullu {
+  background-color: black;
+  transform-origin: left;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: rotate(0deg);
+  transition: all .5s;
+}
+
+#seconds {
+  width: 150px;
+  height: 1px;
+}
+
+#seconds span {
+  position: absolute;
+  right: -32px;
+  bottom: -16px;
+  background: red;
+  width: 25px;
+  height: 25px;
+  border-radius: 27px;
+  text-align: center;
+  padding: 5px;
+  color: white;
+  font-weight: bold;
+  line-height: 24px;;
+}
+
+#minutes {
+  width: 100px;
+  height: 3px;
+}
+
+#hours {
+  width: 60px;
+  height: 3px;
+}
